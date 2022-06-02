@@ -1,0 +1,140 @@
+/* Footer */
+.footer {
+    width: 100%;
+    height: 100vh;
+    max-height: 600px;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+// Newsletter
+.footer__newsletterContainer {
+    margin-top: 4rem;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__newsletterContainer h4 {
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.footer__inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__inputContainer input {
+    height: 4rem;
+    width: 20rem;
+    border: none;
+    padding-left: 1.2rem;
+}
+
+.footer__inputContainer input:focus {
+    outline: none;
+}
+
+.newsletter__btn {
+    background-color: white;
+    height: 4.13rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter__btn a {
+    text-decoration: none;
+    color: white;
+    background-color: $primary-color;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.8rem;
+}
+
+// Footer Sitemap
+.footer__siteMap__container {
+    margin-top: 6rem;
+    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.footer__siteMap__item {
+    border-top: 1px solid white;
+    width: 12rem;
+    margin-bottom: 2rem;
+    padding-top: 1.3rem;
+}
+
+.footer__siteMap__item h5 {
+    color: white;
+}
+
+.footer__siteMap__item ul {
+
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer__siteMap__item ul li {
+    margin-bottom: 1rem;
+}
+
+.footer__siteMap__item ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.85rem;
+}
+
+.socialContainer {
+    margin-top: 3rem;
+    width: 200px;
+    height: 60px;
+    background-color: white;
+}
+
+// Copyright disclaimer
+.copyrightContainer {
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrightContainer p {
+    color: gray;
+    font-size: 0.7rem;
+    margin-left: 2rem;
+}
+
+.copyrightContainer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    list-style-type: none;
+}
+
+.copyrightContainer ul li {
+    margin-right: 1rem;
+}
+
+.copyrightContainer ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.7rem;
+}
