@@ -19,7 +19,57 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <img src="../img/logo3.png" alt="logo Guitar Shop" class="header__logo">
 
+        <!-- Bootstrap nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark header__nav" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3 header__nav__ul">
+                            <li class="nav-item header__nav__item">
+                                <a class="nav-link nav__link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown header__nav__item">
+                                <a class="nav-link nav__link dropdown-toggle" href="#" id="offcanvasNavbarLgDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarLgDropdown">
+                                    <li><a class="dropdown-item" href="./pages/products.html">Guitars</a></li>
+                                    <li><a class="dropdown-item" href="./pages/products.html">Amplifiers</a></li>
+                                    <li><a class="dropdown-item" href="./pages/products.html">Pedals</a></li>
+                                    <li><a class="dropdown-item" href="./pages/products.html">Bass guitars</a></li>
+                                    <li><a class="dropdown-item" href="./pages/products.html">Accesories</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item header__nav__item">
+                                <a class="nav-link nav__link" href="./pages/services.html">Services</a>
+                            </li>
+                            <li class="nav-item header__nav__item">
+                                <a class="nav-link nav__link" href="./pages/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item header__nav__item">
+                                <a class="nav-link nav__link" href="./pages/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
 
     <!-- Footer -->
