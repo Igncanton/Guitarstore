@@ -3,7 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: 0.1rem;
+    letter-spacing: -0.4px;
+}
+
+::selection {
+    background-color: $hover-color;
+    color: $primary-color;
 }
 
 html {

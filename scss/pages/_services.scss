@@ -1,0 +1,113 @@
+.mainServices {
+    margin-top: 0.1rem;
+    width: 100%;
+}
+
+.service__section {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.service__section img {
+    width: 100%;
+}
+
+.service__card {
+    position: absolute;
+    width: 500px;
+    background-color: $primary-color-transparent;
+    right: 0;
+    top: 5%;
+    right: 10%;
+    padding: 1rem;
+}
+
+.service__card img {
+    width: 100%;
+}
+
+.service__textContainer {
+    margin-top: 1.2rem;
+}
+
+.service__textContainer p {
+    color: whitesmoke;
+}
+
+.service__textContainer ul {}
+
+.service__textContainer ul li {
+    color: whitesmoke;
+}
+
+.service__btnContainer {
+    margin-top: 1rem;
+}
+
+.service__btnContainer a {}
+
+.service__btnContainer a button {
+    border-style: none;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
+    background: none;
+    border: 2px solid whitesmoke;
+    color: $hover-color;
+    font-weight: 500;
+}
+
+.service__btnContainer a:nth-child(2) button {
+    background-color: rgba(128, 128, 128, 0.37);
+    color: grey;
+    border: none;
+    font-weight: 500;
+    cursor: not-allowed;
+}
+
+/* Separation banner */
+.service__separation {
+    width: 100%;
+    min-height: 8rem;
+    margin-top: 0.1rem;
+    background-color: grey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.service__separation p {
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.service__description {
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.service__description--container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.service__description--container a {
+    width: fit-content;
+    align-self: center;
+    display: block;
+    margin: 3rem auto 0 auto;
+}
+
+.service__description--container a button {
+    border-style: none;
+    padding: 0.4rem 15rem;
+    background-color: $hover-color;
+    color: whitesmoke;
+    border-radius: 4px;
+}

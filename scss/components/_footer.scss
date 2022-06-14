@@ -99,10 +99,16 @@
 }
 
 .socialContainer {
-    margin-top: 3rem;
-    width: 200px;
-    height: 60px;
-    background-color: white;
+    margin-top: 1rem;
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socialIcon {
+    width: 25px;
+    fill: whitesmoke;
 }
 
 // Copyright disclaimer

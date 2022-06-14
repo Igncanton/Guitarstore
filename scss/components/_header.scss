@@ -32,3 +32,11 @@ header {
 .header__nav__item a {
     font-size: 0.95rem;
 }
+
+.header__nav__item a:hover {
+    color: $hover-color;
+}
+
+#linkActive {
+    color: $hover-color;
+}
