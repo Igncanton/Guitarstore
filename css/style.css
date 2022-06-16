@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  letter-spacing: -0.4px; }
+  letter-spacing: -0.2px; }
 
 ::selection {
   background-color: #f09c00;
@@ -606,3 +606,122 @@ header {
 .category__card p {
   margin-top: 0.25rem;
   font-size: 0.9rem; }
+
+/* Contact General Container */
+.contactContainer {
+  width: 100%;
+  min-height: 100vh; }
+
+.contactContainer h2 {
+  margin-top: 2rem;
+  text-align: center; }
+
+/* Map Container */
+.mapContainer {
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0 7%;
+  display: flex;
+  width: 90%;
+  max-width: 1100px; }
+
+.mapContainer__address {
+  height: 450px;
+  width: 350px;
+  margin: auto 0;
+  background-color: rgba(7, 7, 7, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1.5rem; }
+
+.mapContainer__address h4 {
+  color: whitesmoke; }
+
+.mapContainer__address p {
+  color: whitesmoke; }
+
+.mapContainer__address p span svg {
+  fill: orange;
+  width: 12px; }
+
+.mapContainer__phone h5 {
+  font-size: 1.1rem;
+  color: whitesmoke; }
+
+.mapContainer__phone p {
+  font-size: 0.9rem;
+  color: whitesmoke; }
+
+.mapContainer__phone p span svg {
+  fill: orange;
+  width: 12px; }
+
+.mapContainer__workingHours h5 {
+  font-size: 1.1rem;
+  color: whitesmoke; }
+
+.mapContainer__workingHours ul {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  letter-spacing: 1; }
+
+.mapContainer__workingHours li {
+  color: whitesmoke; }
+
+.mapContainer iframe {
+  width: 95%;
+  max-width: 750px; }
+
+/* Form Container */
+.formContainer {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1100px;
+  padding: 0 10%; }
+
+.formContainer h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1.5rem; }
+
+.formContainer label {
+  margin-bottom: 0.35rem;
+  font-weight: bold; }
+
+.formContainer label span {
+  color: orange;
+  font-size: 1.3rem;
+  margin-left: 0.2rem; }
+
+.formContainer input {
+  margin-bottom: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 4px; }
+
+.formContainer input:focus {
+  outline: none; }
+
+.formContainer textarea {
+  margin-bottom: 1.8rem;
+  resize: none;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 4px; }
+
+.formContainer textarea:focus {
+  outline: none; }
+
+.formBtn {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: orange;
+  border-style: none;
+  border: 1px solid orange;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 4px; }
