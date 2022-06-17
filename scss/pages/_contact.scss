@@ -146,3 +146,28 @@
     font-weight: bold;
     border-radius: 4px;
 }
+
+@media (max-width: 800px) {
+    .mapContainer {
+        flex-direction: column;
+    }
+
+    .mapContainer__address h4 {
+        margin-left: -1.45rem;
+        text-align: center;
+    }
+
+    .mapContainer__address {
+        width: 100%;
+    }
+
+    .mapContainer iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 300px) {
+    .formBtn {
+        width: 95%;
+    }
+}
