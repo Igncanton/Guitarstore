@@ -37,6 +37,10 @@ header {
     color: $hover-color;
 }
 
+.dropdown-item:hover {
+    background-color: $primary-color;
+}
+
 #linkActive {
     color: $hover-color;
 }

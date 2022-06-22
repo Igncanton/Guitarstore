@@ -4,17 +4,26 @@
     margin-top: 0.1rem;
 }
 
-// 1st item
-.carousel__item-1 {
+//carousel item global style
+.carousel__item--container {
     height: 88vh;
+    width: 100%;
 }
 
-.carousel__img-1 {
+.carousel-item__img--container {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.carousel-item__img--container img {
+    height: 100%;
+}
+
+// 1st item specific
 .carousel__container-1 {
     display: flex;
     justify-content: center;
@@ -34,28 +43,6 @@
     border: 2px solid white;
     border-radius: 0;
     color: white;
-}
-
-// 2nd item
-.carousel__item-2 {
-    height: 88vh;
-}
-
-.carousel__img-2 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-// 3rd item
-.carousel__item-3 {
-    height: 88vh;
-}
-
-.carousel__img-3 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 // Main Section
@@ -146,7 +133,7 @@
 
 .blogCard {
     width: 600px;
-    height: 250px;
+    min-height: 250px;
     background-color: black;
     display: flex;
 }
@@ -176,10 +163,6 @@
     justify-content: space-between;
 }
 
-.blogCard__content--text {}
-
-.blogCard__content--text h4 {}
-
 .blogCard__content--text p {
     margin-top: 1.5rem;
     font-size: 0.8rem;
@@ -195,48 +178,18 @@
 }
 
 /* Media Queries */
-@media (min-width: 1100px) {
-    .carousel__item-3 {
+@media (min-width: 1055px) {
+    .carousel-item__img--container img {
+        height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 }
 
-@media (max-width: 1100px) {
-
-    .carousel__item-1 {
+@media (max-width: 1050px) {
+    .carousel__item--container:nth-child(3) .carousel-item__img--container img {
         position: relative;
-    }
-
-    .carousel__img-1 {
-        height: 100%;
-        width: auto;
-        position: absolute;
-        top: 0;
-        right: -25rem;
-    }
-
-    .carousel__item-2 {
-        position: relative;
-    }
-
-    .carousel__img-2 {
-        height: 100%;
-        width: auto;
-        position: absolute;
-        top: 0;
-        right: -20rem;
-    }
-
-    .carousel__item-3 {
-        position: relative;
-    }
-
-    .carousel__img-3 {
-        height: 100%;
-        width: auto;
-        position: absolute;
-        top: 0;
-        right: -52rem;
+        left: 25px;
     }
 
     .cardItem {
@@ -245,5 +198,65 @@
 
     .blogCard {
         margin-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .carousel__item--container:nth-child(1) .carousel-item__img--container img {
+        position: relative;
+        right: 60px;
+    }
+
+    .carousel__item--container:nth-child(3) .carousel-item__img--container img {
+        position: relative;
+        left: 100px;
+    }
+
+    .cardItem {
+        width: 75%;
+    }
+
+    .blogCard {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .blogCard__img {
+        width: 100%;
+    }
+
+    .blogCard__content {
+        width: 100%;
+        border-left: 1px solid gray;
+    }
+}
+
+@media (max-width: 550px) {
+    .carousel__item--container:nth-child(2) .carousel-item__img--container img {
+        position: relative;
+        left: 80px;
+    }
+
+    .carousel__item--container:nth-child(3) .carousel-item__img--container img {
+        position: relative;
+        left: 160px;
+    }
+}
+
+@media (max-width: 350px) {
+    .carousel__item--container:nth-child(1) .carousel-item__img--container img {
+        position: relative;
+        right: 150px;
+    }
+
+    .carousel__item--container:nth-child(2) .carousel-item__img--container img {
+        position: relative;
+        left: 250px;
+    }
+
+    .carousel__item--container:nth-child(3) .carousel-item__img--container img {
+        position: relative;
+        left: 190px;
     }
 }
