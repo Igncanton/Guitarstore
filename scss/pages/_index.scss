@@ -43,6 +43,11 @@
     border: 2px solid white;
     border-radius: 0;
     color: white;
+    transition: all 500ms ease;
+}
+
+.carousel__btn:hover {
+    background-color: $hover-color-opacity
 }
 
 // Main Section
@@ -112,12 +117,18 @@
     color: white;
 }
 
-.cardItem__content a {
+.cardItem__content--btn {
     text-decoration: none;
     padding: 0.8rem 2.2rem;
     color: $primary-color;
     background-color: white;
     font-size: 0.7rem;
+    transition: all 500ms ease;
+}
+
+.cardItem__content--btn:hover {
+    color: $primary-color;
+    padding-right: 3rem;
 }
 
 //Blog cards
@@ -175,6 +186,11 @@
     background-color: $primary-color;
     font-size: 0.7rem;
     display: inline;
+    transition: all 1s ease;
+}
+
+.blogCard__content a:hover {
+    letter-spacing: 0.1rem;
 }
 
 /* Media Queries */

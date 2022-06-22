@@ -276,7 +276,11 @@ header {
   background-color: #00000038;
   border: 2px solid white;
   border-radius: 0;
-  color: white; }
+  color: white;
+  transition: all 500ms ease; }
+
+.carousel__btn:hover {
+  background-color: rgba(255, 167, 4, 0.74); }
 
 .mainContainer {
   min-height: 100vh;
@@ -334,12 +338,17 @@ header {
   font-size: 0.8rem;
   color: white; }
 
-.cardItem__content a {
+.cardItem__content--btn {
   text-decoration: none;
   padding: 0.8rem 2.2rem;
   color: #070707;
   background-color: white;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  transition: all 500ms ease; }
+
+.cardItem__content--btn:hover {
+  color: #070707;
+  padding-right: 3rem; }
 
 .blogContainer {
   max-width: 1280px;
@@ -387,7 +396,11 @@ header {
   color: white;
   background-color: #070707;
   font-size: 0.7rem;
-  display: inline; }
+  display: inline;
+  transition: all 1s ease; }
+
+.blogCard__content a:hover {
+  letter-spacing: 0.1rem; }
 
 /* Media Queries */
 @media (min-width: 1055px) {
