@@ -119,7 +119,11 @@ header {
   color: white;
   background-color: #070707;
   padding: 0.8rem 1.2rem;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  transition: all 500ms ease; }
+
+.newsletter__btn a:hover {
+  background-color: #212121; }
 
 .footer__siteMap__container {
   margin-top: 6rem;
@@ -146,7 +150,8 @@ header {
 .footer__siteMap__item ul li a {
   text-decoration: none;
   color: gray;
-  font-size: 0.85rem; }
+  font-size: 0.85rem;
+  transition: all 500ms ease; }
 
 .footer__siteMap__item ul li a:hover {
   color: whitesmoke; }
@@ -176,7 +181,9 @@ header {
   margin-left: 2rem;
   align-content: center;
   margin-bottom: 0;
-  letter-spacing: .05rem; }
+  letter-spacing: .06rem;
+  text-align: center;
+  line-height: 0.7rem; }
 
 .copyrightContainer ul {
   display: flex;
@@ -193,7 +200,7 @@ header {
   text-decoration: none;
   color: gray;
   font-size: 0.7rem;
-  letter-spacing: .05rem; }
+  letter-spacing: .06rem; }
 
 /* Media Queries */
 @media (max-width: 1100px) {
@@ -351,6 +358,7 @@ header {
 
 .cardItem__content--btn:hover {
   color: #070707;
+  background-color: #f09c00;
   padding-right: 3rem; }
 
 .blogContainer {
@@ -403,6 +411,7 @@ header {
   transition: all 1s ease; }
 
 .blogCard__content a:hover {
+  background-color: #2d2d2d;
   letter-spacing: 0.1rem; }
 
 /* Media Queries */
@@ -897,7 +906,19 @@ header {
   border: 1px solid orange;
   color: whitesmoke;
   font-weight: bold;
-  border-radius: 4px; }
+  border-radius: 4px;
+  transition: all 500ms ease; }
+
+.formBtn:hover {
+  background-color: #e69500; }
+
+.resetBtn {
+  background-color: #a6a6a6;
+  color: whitesmoke;
+  transition: all 500ms ease; }
+
+.resetBtn:hover {
+  background-color: #737373; }
 
 @media (max-width: 800px) {
   .mapContainer {

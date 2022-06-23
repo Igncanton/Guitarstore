@@ -146,6 +146,21 @@
     color: whitesmoke;
     font-weight: bold;
     border-radius: 4px;
+    transition: all 500ms ease;
+}
+
+.formBtn:hover {
+    background-color: darken($secondary-color, $amount: 5%);
+}
+
+.resetBtn {
+    background-color: lighten(grey, $amount: 15%);
+    color: whitesmoke;
+    transition: all 500ms ease;
+}
+
+.resetBtn:hover {
+    background-color: darken(grey, $amount: 5%);
 }
 
 @media (max-width: 800px) {

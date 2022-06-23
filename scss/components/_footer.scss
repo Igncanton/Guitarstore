@@ -59,6 +59,11 @@
     background-color: $primary-color;
     padding: 0.8rem 1.2rem;
     font-size: 0.8rem;
+    transition: all 500ms ease;
+}
+
+.newsletter__btn a:hover {
+    background-color: lighten($primary-color, $amount: 10%);
 }
 
 // Footer Sitemap
@@ -93,6 +98,7 @@
     text-decoration: none;
     color: gray;
     font-size: 0.85rem;
+    transition: all 500ms ease;
 }
 
 .footer__siteMap__item ul li a:hover {
@@ -129,7 +135,9 @@
     margin-left: 2rem;
     align-content: center;
     margin-bottom: 0;
-    letter-spacing: .05rem;
+    letter-spacing: .06rem;
+    text-align: center;
+    line-height: 0.7rem;
 }
 
 .copyrightContainer ul {
@@ -149,7 +157,7 @@
     text-decoration: none;
     color: gray;
     font-size: 0.7rem;
-    letter-spacing: .05rem;
+    letter-spacing: .06rem;
 }
 
 /* Media Queries */
