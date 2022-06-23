@@ -27,13 +27,13 @@ body {
 
 /* Header & Nav bar */
 header {
-  margin-top: 0.05rem;
+  border-top: 1px solid white;
   background-color: #070707;
   height: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1rem;
+  padding-left: 1.7rem;
   position: sticky;
   top: 0;
   left: 0;
@@ -148,6 +148,9 @@ header {
   color: gray;
   font-size: 0.85rem; }
 
+.footer__siteMap__item ul li a:hover {
+  color: whitesmoke; }
+
 .socialContainer {
   margin-top: 1rem;
   width: 150px;
@@ -243,7 +246,7 @@ header {
 /* Index page */
 /* Carousel */
 .carouselContainer {
-  margin-top: 0.1rem; }
+  margin-top: 0.05rem; }
 
 .carousel__item--container {
   height: 88vh;
@@ -561,7 +564,7 @@ header {
     left: 210px; } }
 
 .mainServices {
-  margin-top: 0.1rem;
+  margin-top: 0.05rem;
   width: 100%;
   min-height: 100%; }
 
@@ -802,7 +805,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-left: 1.5rem; }
+  padding-left: 1.5rem;
+  border-right: 2px solid #f09c00; }
 
 .mapContainer__address h4 {
   color: whitesmoke; }
@@ -898,6 +902,9 @@ header {
 @media (max-width: 800px) {
   .mapContainer {
     flex-direction: column; }
+  .mapContainer__address {
+    border-right: none;
+    border-bottom: 2px solid #f09c00; }
   .mapContainer__address h4 {
     margin-left: -1.45rem;
     text-align: center; }

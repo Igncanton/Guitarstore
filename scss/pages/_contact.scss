@@ -29,6 +29,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-left: 1.5rem;
+    border-right: 2px solid $hover-color;
 }
 
 .mapContainer__address h4 {
@@ -150,6 +151,11 @@
 @media (max-width: 800px) {
     .mapContainer {
         flex-direction: column;
+    }
+
+    .mapContainer__address {
+        border-right: none;
+        border-bottom: 2px solid $hover-color;
     }
 
     .mapContainer__address h4 {

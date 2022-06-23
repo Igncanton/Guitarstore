@@ -81,7 +81,6 @@
 }
 
 .footer__siteMap__item ul {
-
     list-style-type: none;
     padding: 0;
 }
@@ -94,6 +93,10 @@
     text-decoration: none;
     color: gray;
     font-size: 0.85rem;
+}
+
+.footer__siteMap__item ul li a:hover {
+    color: whitesmoke;
 }
 
 // Social media container
