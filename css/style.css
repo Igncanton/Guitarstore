@@ -468,11 +468,15 @@ header {
     position: relative;
     right: 150px; }
   .carousel__item--container:nth-child(2) .carousel-item__img--container img {
-    position: relative;
     left: 250px; }
   .carousel__item--container:nth-child(3) .carousel-item__img--container img {
-    position: relative;
     left: 190px; } }
+
+@media (max-width: 400px) {
+  .carousel__item--container:nth-child(1) .carousel-item__img--container img {
+    right: 180px; }
+  .carousel__item--container:nth-child(2) .carousel-item__img--container img {
+    left: 280px; } }
 
 .products {
   width: 100%;
