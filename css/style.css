@@ -731,7 +731,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1.3rem 0; }
-  .category__title h4 {
+  .category__title h3 {
     font-weight: 600; }
   .category__title a {
     text-decoration: none;
@@ -818,8 +818,9 @@ header {
     justify-content: space-evenly;
     padding-left: 1.5rem;
     border-right: 2px solid #f09c00; }
-    .mapContainer__address h4 {
-      color: whitesmoke; }
+    .mapContainer__address h3 {
+      color: whitesmoke;
+      font-size: 1.5rem; }
     .mapContainer__address p {
       color: whitesmoke; }
     .mapContainer__address p span svg {
