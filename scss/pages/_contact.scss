@@ -2,11 +2,14 @@
 .contactContainer {
     width: 100%;
     min-height: 100vh;
-}
 
-.contactContainer h2 {
-    margin-top: 2rem;
-    text-align: center;
+    h2 {
+        margin-top: 2rem;
+        text-align: center;
+        color: $primary-color;
+        background: #FFFFFF;
+        text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
+    }
 }
 
 /* Map Container */
@@ -17,72 +20,68 @@
     display: flex;
     width: 90%;
     max-width: 1100px;
-}
 
-// address container
-.mapContainer__address {
-    height: 450px;
-    width: 350px;
-    margin: auto 0;
-    background-color: $primary-color-transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 1.5rem;
-    border-right: 2px solid $hover-color;
-}
+    // address container
+    &__address {
+        height: 450px;
+        width: 350px;
+        margin: auto 0;
+        background-color: $primary-color-transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 1.5rem;
+        border-right: 2px solid $hover-color;
 
-.mapContainer__address h4 {
-    color: whitesmoke;
-}
+        h4 {
+            color: whitesmoke;
+        }
 
-.mapContainer__address p {
-    color: whitesmoke;
-}
+        p {
+            color: whitesmoke;
+        }
 
-.mapContainer__address p span svg {
-    fill: $secondary-color;
-    width: 12px;
-}
+        p span svg {
+            fill: $secondary-color;
+            width: 12px;
+        }
+    }
 
-.mapContainer__phone {}
+    &__phone h5 {
+        font-size: 1.1rem;
+        color: whitesmoke;
+    }
 
-.mapContainer__phone h5 {
-    font-size: 1.1rem;
-    color: whitesmoke;
-}
+    &__phone p {
+        font-size: 0.9rem;
+        color: whitesmoke;
+    }
 
-.mapContainer__phone p {
-    font-size: 0.9rem;
-    color: whitesmoke;
-}
+    &__phone p span svg {
+        fill: $secondary-color;
+        width: 12px;
+    }
 
-.mapContainer__phone p span svg {
-    fill: $secondary-color;
-    width: 12px;
-}
+    &__workingHours h5 {
+        font-size: 1.1rem;
+        color: whitesmoke;
+    }
 
-.mapContainer__workingHours {}
+    &__workingHours ul {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        letter-spacing: 1;
+    }
 
-.mapContainer__workingHours h5 {
-    font-size: 1.1rem;
-    color: whitesmoke;
-}
+    &__workingHours li {
+        color: whitesmoke;
+    }
 
-.mapContainer__workingHours ul {
-    margin-bottom: 0;
-    font-size: 0.9rem;
-    letter-spacing: 1;
-}
-
-.mapContainer__workingHours li {
-    color: whitesmoke;
-}
-
-// map styles
-.mapContainer iframe {
-    width: 95%;
-    max-width: 750px;
+    // map styles
+    iframe {
+        width: 95%;
+        max-width: 750px;
+    }
 }
 
 /* Form Container */
@@ -93,47 +92,46 @@
     width: 90%;
     max-width: 1100px;
     padding: 0 10%;
-}
 
-.formContainer h3 {
-    font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
+    h3 {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
 
-.formContainer label {
-    margin-bottom: 0.35rem;
-    font-weight: bold;
-}
+    label {
+        margin-bottom: 0.35rem;
+        font-weight: bold;
+    }
 
-.formContainer label span {
-    color: $secondary-color;
-    font-size: 1.3rem;
-    margin-left: 0.2rem;
+    label span {
+        color: $secondary-color;
+        font-size: 1.3rem;
+        margin-left: 0.2rem;
+    }
 
-}
+    input {
+        margin-bottom: 1.2rem;
+        padding: 0.5rem;
+        border: 1px solid lightgray;
+        border-radius: 4px;
 
-.formContainer input {
-    margin-bottom: 1.2rem;
-    padding: 0.5rem;
-    border: 1px solid lightgray;
-    border-radius: 4px;
-}
+        &:focus {
+            outline: none;
+        }
+    }
 
-.formContainer input:focus {
-    outline: none;
-}
+    textarea {
+        margin-bottom: 1.8rem;
+        resize: none;
+        padding: 0.5rem;
+        border: 1px solid lightgray;
+        border-radius: 4px;
 
-.formContainer textarea {
-    margin-bottom: 1.8rem;
-    resize: none;
-    padding: 0.5rem;
-    border: 1px solid lightgray;
-    border-radius: 4px;
-}
-
-.formContainer textarea:focus {
-    outline: none;
+        &:focus {
+            outline: none;
+        }
+    }
 }
 
 .formBtn {
@@ -147,43 +145,43 @@
     font-weight: bold;
     border-radius: 4px;
     transition: all 500ms ease;
-}
 
-.formBtn:hover {
-    background-color: darken($secondary-color, $amount: 5%);
+    &:hover {
+        background-color: darken($secondary-color, $amount: 5%);
+    }
 }
 
 .resetBtn {
     background-color: lighten(grey, $amount: 15%);
     color: whitesmoke;
     transition: all 500ms ease;
-}
 
-.resetBtn:hover {
-    background-color: darken(grey, $amount: 5%);
+    &:hover {
+        background-color: darken(grey, $amount: 5%);
+    }
 }
 
 @media (max-width: 800px) {
     .mapContainer {
         flex-direction: column;
-    }
 
-    .mapContainer__address {
-        border-right: none;
-        border-bottom: 2px solid $hover-color;
-    }
+        &__address {
+            border-right: none;
+            border-bottom: 2px solid $hover-color;
+        }
 
-    .mapContainer__address h4 {
-        margin-left: -1.45rem;
-        text-align: center;
-    }
+        &__address h4 {
+            margin-left: -1.45rem;
+            text-align: center;
+        }
 
-    .mapContainer__address {
-        width: 100%;
-    }
+        &__address {
+            width: 100%;
+        }
 
-    .mapContainer iframe {
-        width: 100%;
+        iframe {
+            width: 100%;
+        }
     }
 }
 

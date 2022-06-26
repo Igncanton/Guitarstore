@@ -2,6 +2,8 @@
 /* Carousel */
 .carouselContainer {
     margin-top: 0.05rem;
+    -webkit-box-shadow: 0px 10px 13px -7px $primary-color, 5px 5px 15px 5px rgba(7, 7, 7, 0);
+    box-shadow: 0px 10px 13px -7px $primary-color, 5px 5px 15px 5px rgba(7, 7, 7, 0);
 }
 
 //carousel item global style
@@ -17,10 +19,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.carousel-item__img--container img {
-    height: 100%;
+    img {
+        height: 100%;
+    }
 }
 
 // 1st item specific
@@ -44,10 +46,10 @@
     border-radius: 0;
     color: white;
     transition: all 500ms ease;
-}
 
-.carousel__btn:hover {
-    background-color: $hover-color-opacity
+    &:hover {
+        background-color: $hover-color-opacity
+    }
 }
 
 // Main Section
@@ -66,6 +68,9 @@
 .indexMainTitle {
     text-align: center;
     padding: 2rem 0;
+    color: $primary-color;
+    background: #FFFFFF;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 //Cards
@@ -82,54 +87,57 @@
     height: 450px;
     width: 400px;
     background-color: $primary-color;
-}
+    -webkit-box-shadow: 0px 10px 13px -7px $primary-color, 5px 5px 15px 5px rgba(7, 7, 7, 0);
+    box-shadow: 0px 10px 13px -7px $primary-color, 5px 5px 15px 5px rgba(7, 7, 7, 0);
 
-.cardItem__img {
-    height: 180px;
-    width: 100%;
-    background-color: rgb(177, 177, 177);
-    overflow: hidden;
-}
+    &__img {
+        height: 180px;
+        width: 100%;
+        background-color: rgb(177, 177, 177);
+        overflow: hidden;
 
-.cardItem__img img {
-    height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-}
+        img {
+            height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
 
-.cardItem__content {
-    height: 270px;
-    width: 100%;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+    &__content {
+        height: 270px;
+        width: 100%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
 
-.cardItem__content--text h4 {
-    color: white;
-}
+        &--text h2 {
+            color: white;
+            font-size: 1.5rem;
+        }
 
-.cardItem__content--text p {
-    margin-top: 1.5rem;
-    font-size: 0.8rem;
-    color: white;
-}
+        &--text p {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: white;
+        }
 
-.cardItem__content--btn {
-    text-decoration: none;
-    padding: 0.8rem 2.2rem;
-    color: $primary-color;
-    background-color: white;
-    font-size: 0.7rem;
-    transition: all 500ms ease;
-}
+        &--btn {
+            text-decoration: none;
+            padding: 0.8rem 2.2rem;
+            color: $primary-color;
+            background-color: white;
+            font-size: 0.7rem;
+            transition: all 500ms ease;
 
-.cardItem__content--btn:hover {
-    color: $primary-color;
-    background-color: $hover-color;
-    padding-right: 3rem;
+            &:hover {
+                color: $primary-color;
+                background-color: $hover-color;
+                padding-right: 3rem;
+            }
+        }
+    }
 }
 
 //Blog cards
@@ -148,51 +156,56 @@
     min-height: 250px;
     background-color: black;
     display: flex;
-}
+    -webkit-box-shadow: 0px 10px 13px -7px $primary-color, 5px 5px 15px 5px rgba(7, 7, 7, 0);
+    box-shadow: 0px 10px 13px -7px $primary-color, 5px 5px 15px 5px rgba(7, 7, 7, 0);
 
-.blogCard__img {
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
+    &__img {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
 
-}
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 
-.blogCard__img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+    &__content {
+        width: 350px;
+        height: 250px;
+        padding: 1.5rem;
+        background-color: white;
+        border: 1px solid gray;
+        border-left: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-.blogCard__content {
-    width: 350px;
-    height: 250px;
-    padding: 1.5rem;
-    background-color: white;
-    border: 1px solid gray;
-    border-left: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+        &--text h3 {
+            font-size: 1.5rem;
+        }
 
-.blogCard__content--text p {
-    margin-top: 1.5rem;
-    font-size: 0.8rem;
-}
+        &--text p {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+        }
 
-.blogCard__content a {
-    text-decoration: none;
-    padding: 0.8rem 2.2rem;
-    color: white;
-    background-color: $primary-color;
-    font-size: 0.7rem;
-    display: inline;
-    transition: all 1s ease;
-}
+        a {
+            text-decoration: none;
+            padding: 0.8rem 2.2rem;
+            color: white;
+            background-color: $primary-color;
+            font-size: 0.7rem;
+            display: inline;
+            transition: all 1s ease;
+        }
 
-.blogCard__content a:hover {
-    background-color: lighten($primary-color, $amount: 15%);
-    letter-spacing: 0.1rem;
+        a:hover {
+            background-color: lighten($primary-color, $amount: 15%);
+            letter-spacing: 0.1rem;
+        }
+    }
 }
 
 /* Media Queries */
@@ -238,15 +251,15 @@
     .blogCard {
         flex-direction: column;
         width: 75%;
-    }
 
-    .blogCard__img {
-        width: 100%;
-    }
+        &__img {
+            width: 100%;
+        }
 
-    .blogCard__content {
-        width: 100%;
-        border-left: 1px solid gray;
+        &__content {
+            width: 100%;
+            border-left: 1px solid gray;
+        }
     }
 }
 
@@ -262,7 +275,7 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
     .carousel__item--container:nth-child(1) .carousel-item__img--container img {
         position: relative;
         right: 150px;

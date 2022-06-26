@@ -2,7 +2,6 @@
 .footer {
     width: 100%;
     min-height: 100vh;
-    // max-height: 600px;
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
@@ -117,6 +116,11 @@
 .socialIcon {
     width: 25px;
     fill: whitesmoke;
+    transition: all 500ms ease;
+}
+
+.socialIcon:hover {
+    transform: scale(1.1);
 }
 
 // Copyright disclaimer

@@ -30,3 +30,11 @@ body {
 .blockedLink {
     cursor: not-allowed;
 }
+
+.blockedLink:hover {
+    pointer-events: none;
+}
+
+.notAllowed {
+    cursor: not-allowed;
+}

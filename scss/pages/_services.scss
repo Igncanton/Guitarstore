@@ -11,12 +11,12 @@
     height: 620px;
     position: relative;
     overflow: hidden;
-}
 
-.service__section img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .service__cardContainer {
@@ -37,46 +37,57 @@
     background-color: $primary-color-transparent;
     padding: 1rem;
     margin-right: 3rem;
-}
 
-.service__card img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 .service__textContainer {
     margin-top: 1.2rem;
-}
 
-.service__textContainer p {
-    color: whitesmoke;
-}
+    p {
+        color: whitesmoke;
+    }
 
-.service__textContainer ul li {
-    color: whitesmoke;
+    ul li {
+        color: whitesmoke;
+    }
 }
 
 .service__btnContainer {
     margin-top: 1rem;
-}
 
-.service__btnContainer a button {
-    border-style: none;
-    width: 100%;
-    padding: 0.5rem 0;
-    margin-bottom: 0.8rem;
-    border-radius: 4px;
-    background: none;
-    border: 2px solid whitesmoke;
-    color: $hover-color;
-    font-weight: 500;
-}
+    a button {
+        border-style: none;
+        width: 100%;
+        padding: 0.5rem 0;
+        margin-bottom: 0.8rem;
+        border-radius: 4px;
+        background: none;
+        border: 2px solid whitesmoke;
+        color: $hover-color;
+        font-weight: 500;
+        transition: all 500ms ease;
+    }
 
-.service__btnContainer a:nth-child(2) button {
-    background-color: rgba(128, 128, 128, 0.37);
-    color: grey;
-    border: none;
-    font-weight: 500;
-    cursor: not-allowed;
+    a button:hover {
+        background-color: $hover-color-opacity;
+        color: $primary-color;
+    }
+
+    a:nth-child(2) button {
+        background-color: rgba(128, 128, 128, 0.5);
+        color: rgb(189, 189, 189);
+        border: none;
+        font-weight: 500;
+        cursor: not-allowed;
+    }
+
+    a:nth-child(2) button:hover {
+        background-color: $primary-color-transparent;
+        color: whitesmoke;
+    }
 }
 
 /* Separation banner */
@@ -91,41 +102,45 @@
     align-items: center;
     padding: 0 2rem;
     flex-wrap: wrap;
-}
 
-.service__separation p {
-    color: whitesmoke;
-    font-size: 2rem;
-    margin: 0;
+    p {
+        color: whitesmoke;
+        font-size: 2rem;
+        margin: 0;
+    }
 }
-
 
 //service content
 .service__description {
     width: 100%;
     padding: 5rem 0;
-}
 
-.service__description--container {
-    width: 80%;
-    max-width: 700px;
-    margin: 0 auto;
-}
+    &--container {
+        width: 80%;
+        max-width: 700px;
+        margin: 0 auto;
 
-.service__description--container a {
-    align-self: center;
-    display: block;
-    width: 90%;
-    margin: 3rem auto 0 auto;
-}
+        a {
+            align-self: center;
+            display: block;
+            width: 90%;
+            margin: 3rem auto 0 auto;
+        }
 
-.service__description--container a button {
-    border-style: none;
-    padding: 0.4rem 0;
-    width: 100%;
-    background-color: $hover-color;
-    color: whitesmoke;
-    border-radius: 4px;
+        a button {
+            border-style: none;
+            padding: 0.4rem 0;
+            width: 100%;
+            background-color: $hover-color;
+            color: whitesmoke;
+            border-radius: 4px;
+            transition: all 500ms ease;
+        }
+
+        a button:hover {
+            background-color: darken($color: $hover-color, $amount: 5);
+        }
+    }
 }
 
 /* Services Media Queries */
